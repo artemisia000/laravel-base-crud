@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('content')
+@section('content1')
    <div class="container"> 
 
     <h1>My cOmics</h1>

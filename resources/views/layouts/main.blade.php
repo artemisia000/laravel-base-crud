@@ -10,8 +10,8 @@
     @include('partials.header')
 
     <main>
-        @yield('content');
-        @yield('content');
+        @yield('content')
+        @yield('content1')
     </main>
     
 </body>
