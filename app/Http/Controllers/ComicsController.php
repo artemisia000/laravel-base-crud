@@ -50,8 +50,16 @@ class ComicsController extends Controller
      */
     public function show($id)
     {
-        //
+        $comic = Comic::find($id);
+        dump($comic);
+        
+        if ($comic){
+            return view ('comics.show', compact ('comic'));
+        }
+
+        abort(404);
     }
+       
 
     /**
      * Show the form for editing the specified resource.
