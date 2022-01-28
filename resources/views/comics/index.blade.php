@@ -27,6 +27,9 @@
               @endforeach
           </tbody>
        </table>
+       <button class="btn btn-primary">
+          <a href="{{ route ('comics.create')}} ">Crea il tuo comics</a>
+       </button>
 
    </div>
 

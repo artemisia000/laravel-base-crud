@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Comic;
 
 class ComicsController extends Controller
@@ -38,8 +39,23 @@ class ComicsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        return 'pastatssss';
+    {   
+        //salva dati comics in DB
+        $dataCom = $request->all();
+
+        //inserimento in DB 
+        //$new_com = new Comic();
+
+        //$new_com->title = $dataCom['title'];
+
+        //$new_com->price = $dataCom['price'];
+
+        //$new_com->save();
+
+        //return redirect()->route('comics.show', $new_com->id);
+
+        return 'your comics';
+
     }
 
     /**
